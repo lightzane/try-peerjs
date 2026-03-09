@@ -124,7 +124,7 @@ async function copyId() {
         <input
           v-model="remoteId"
           placeholder="Enter peer ID to connect..."
-          class="focus:ring-primary-400 flex-1 rounded-lg border-0 px-3 py-1.5 text-sm focus:ring-2 focus:outline-none"
+          class="focus:ring-primary-400 flex-1 rounded-lg border-0 px-3 py-1.5 focus:ring-2 focus:outline-none sm:text-sm"
           @keyup.enter="connect"
         />
         <button
@@ -163,7 +163,7 @@ async function copyId() {
           v-model="input"
           placeholder="Type a message..."
           :disabled="!conn"
-          class="focus:ring-primary-400 flex-1 rounded-lg border-0 px-3 py-1.5 text-sm focus:ring-2 focus:outline-none disabled:opacity-40"
+          class="focus:ring-primary-400 flex-1 rounded-lg border-0 px-3 py-1.5 focus:ring-2 focus:outline-none disabled:opacity-40 sm:text-sm"
           @keyup.enter="send"
         />
         <button
